@@ -1,0 +1,26 @@
+
+
+            Gauss siedal Iteration method Algorithm   :
+
+			step1 : Take input in 2-D matrix name  : eqn[3][4]
+			step2 : Checking diagonal dominate : 
+					(Storing equation order in 1-D matrix : memo[])
+					
+										
+			step3 : create Varialble value storage 1-D matrix memo_x[100] , memo_y[100], memo_z[100] 		
+			        and Coping eqn[3][4] matrix to 2-D matrix new_eqn[3][4] bassed on their order in 
+					memo[]
+					
+					
+			step4 : Start iteration with condition as : till (memo_x[],memo_y[],memo_z[] == have integer 
+			        value)
+					use formula : x = (1/a1)*(d1-b1*y-c1*z)
+								  y = (1/b2)*(d2-a2*x-c2*z)
+								  z = (1/c3)*(d3-a3*x-b3*y)
+			        
+			step5 : Thus we have x = memo_x[loc] , y = memo_y[loc] , z = memo_z[loc]
+					where loc = last iteration number value 
+					
+			step6 : exit()		
+					
+					
